@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game - Home</title>
+    <link rel="stylesheet" href="../CSS/Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+<body>
+    <header class="main-header">
+        <h1 class="logo">Memory Game</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><button class="about" onclick="displayDetails(this)">About The Game</button></li>
+                <li><button class="contact" onclick="displayDetails(this)">Contact</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="home-container">
+            <h1 class="game-quote">Test Your Memory</h1>
+            <div class="options">
+                <div class="level">
+                    <a href="Easy.html" class="option easy">Easy</a>
+                    <p class="level-description">12 cards | 40 seconds</p>
+                </div>
+                <div class="level">
+                    <a href="Medium.html" class="option medium">Medium</a>
+                    <p class="level-description">16 cards | 60 seconds</p>
+                </div>
+                <div class="level">
+                    <a href="Hard.html" class="option hard">Hard</a>
+                    <p class="level-description">20 cards | 80 seconds</p>
+                </div>
+            </div>
+        </div>
+        <audio autoplay loop>
+            <source src="../Resources/gameMusicmp4.mp4" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </main>
+
+    <footer>
+        <p>Copyright ©2025 All Rights Reserved. Information Technology Institute (ITI).Gaber Raafat.</p>
+    </footer>
+
+
+
+  <script src="../JS/Home.js"></script>
+
+</body>
+
+</html>

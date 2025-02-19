@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Memory Game Easy</title>
+    <link rel="stylesheet" href="../CSS/Easy.css" />
+
+</head>
+
+<body>
+    <div class="canvas-class" style=" position: absolute; top: 10px; left: 50px;">
+        <canvas id="timerCanvas" width="200" height="200"></canvas>
+    </div>
+
+    <div class="start-page">
+        <span>Start The Game</span>
+    </div>
+    <div class="main-Side">
+        <nav class="playerInfo">
+            <div class="welcome">
+                <h1>Hey !</h1>
+                <span class="player-name">Player</span>
+                <p>Welcome To The Game</p>
+            </div>
+
+            <div class="triesInfo">
+                <span class="no-Tries">0</span><br>
+                <p>MISSES</p>
+            </div>
+        </nav>
+
+        <main class="main-class">
+            <div class="game-element" data-frout="F1">
+                <div class="front face"></div>
+                <div class="back face">
+                    <img src="../Resources/1.jpg" alt="" />
+                </div>
+            </div>
+            <div class="game-element" data-frout="F1">
+                <div class="front face"></div>
+                <div class="back face">
+                    <img src="../Resources/1.jpg" alt="" />
+                </div>
+            </div>
+
+            <div class="game-element" data-frout="F2">
+                <div class="front face"></div>
+                <div class="back face">
+                    <img src="../Resources/2.jpg" alt="" />
+                </div>
+            </div>
+            <div class="game-element" data-frout="F2">
+                <div class="front face"></div>
+                <div class="back face">
+                    <img src="../Resources/2.jpg" alt="" />
+                </div>
+            </div>
+
+            <div class="game-element" data-frout="F3">
+                <div class="front face"></div>
+                <div class="back face">
+                    <img src="../Resources/3.jpg" alt="" />
+                </div>
+            </div>
+            <div class="game-element" data-frout="F3">
+                <div class="front face"></div>
+                <div class="back face">
+                    <img src="../Resources/3.jpg" alt="" />
+                </div>
+            </div>
+
+            <div class="game-element" data-frout="F4">
+                <div class="front face"></div>
+                <div class="back face">
+                    <img src="../Resources/4.jpg" alt="" />
+                </div>
+            </div>
+            <div class="game-element" data-frout="F4">
+                <div class="front face"></div>
+                <div class="back face">
+                    <img src="../Resources/4.jpg" alt="" />
+                </div>
+            </div>
+
+            <div class="game-element" data-frout="F5">
+                <div class="front face"></div>
+                <div class="back face">
+                    <img src="../Resources/5.jpg" alt="" />
+                </div>
+            </div>
+            <div class="game-element" data-frout="F5">
+                <div class="front face"></div>
+                <div class="back face">
+                    <img src="../Resources/5.jpg" alt="" />
+                </div>
+            </div>
+
+            <div class="game-element" data-frout="F6">
+                <div class="front face"></div>
+                <div class="back face">
+                    <img src="../Resources/6.jpg" alt="" />
+                </div>
+            </div>
+            <div class="game-element" data-frout="F6">
+                <div class="front face"></div>
+                <div class="back face">
+                    <img src="../Resources/6.jpg" alt="" />
+                </div>
+            </div>
+
+        </main>
+        <audio id="succss" src="../Resources/succssmp4.mp4" preload="auto"></audio>
+        <audio id="fail" src="../Resources/failmp4.mp4" preload="auto"></audio>
+
+
+        <!-- Game Over Alert Style -->
+
+        <div class="modal-overlay"></div>
+        <div class="custom-modal">
+            <p>GAME OVER! </p>
+            <p> Play Again?</p>
+            <div class="modal-buttons">
+                <button class="modal-button yes-button">Yes</button>
+                <button class="modal-button no-button">No</button>
+            </div>
+        </div>
+
+        <!-- Wining Alert Style -->
+
+        <div class="modal-overlay-win"></div>
+        <div class="custom-modal-win">
+            <p>🎉 Congratulations! You won the game! 🎉 </p>
+            <p> Play Again?</p>
+            <div class="modal-buttons-win">
+                <button class="modal-button yes-button-win">Yes</button>
+                <button class="modal-button no-button-win"><a class="anchor-class" href="home.html">Go
+                        Home</a></button>
+            </div>
+        </div>
+
+        <!-- Player Name Alert Style -->
+
+        <div class="player-name-overlay"></div>
+        <div class="player-name-modal">
+            <p style="color: #f1c40f;">Please Enter Your Name For Record</p>
+            <input type="text" id="player-name-input" placeholder="Your Name" />
+            <div class="modal-buttons">
+                <button class="modal-button yes-button" onclick="submitPlayerName()">
+                    Go
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="home" onclick="window.location.href='home.html';">
+        <button class="exit-button">
+            <i class="fas fa-home"></i>
+            Home
+        </button>
+    </div>
+
+    <script src="../JS/Easy.js"></script>
+</body>
+
+</html>
